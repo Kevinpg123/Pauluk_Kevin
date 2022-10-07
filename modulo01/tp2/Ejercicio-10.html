@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Ejercicio 10:
+// Escribir un programa que reciba el número del mes y devuelva si tiene 31, 30 o menos días.
+// Por ejemplo:12 = tiene 31 días.
+let mesn=Number(prompt('Ingrese el numero de mes'))
+
+while(mesn<1||mesn>12){
+    mesn=Number(prompt('Error vuelva a ingresar el numero del mes'))
+}
+
+if(mesn==1 || mesn==3 || mesn==5 || mesn==7 || mesn==8 || mesn==10 || mesn==12){
+    document.write(`El mes ${mesn} tiene 31 dias`)
+}
+if(mesn==4 || mesn==6 || mesn==9 || mesn==11){
+    document.write(`El mes ${mesn} tiene 30 dias`)
+}
+if(mesn==2){
+    document.write(`El mes ${mesn} tiene 28 dias`)
+}
+    </script>
+</body>
+</html>

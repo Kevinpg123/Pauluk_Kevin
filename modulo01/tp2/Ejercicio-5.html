@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let testo=prompt("Ingrese el texto a analizar")
+        let may=0 , min=0
+        for(i=0;i<testo.length;i++)
+        {
+            if(testo[i]==testo[i].toUpperCase())
+            {
+                may++
+                console.log(`mayuscula ${may}`);
+            }
+            else
+            {
+                min++
+                console.log(`minuscula ${min}`);
+            }
+        }
+    if(may==0)
+    {
+        document.write('Todas las letras ingresadas son minusculas')
+    }
+    if(min==0)
+    {
+        document.write('Todas las letras ingresadas son mayusculas')
+    }
+    if(may>0&&min>0)
+    {
+        document.write('Hay mayusculas y minusculas')
+    }
+
+
+
+    </script>
+</body>
+</html>

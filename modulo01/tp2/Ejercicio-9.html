@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Ejercicio 9:
+// Crear un programa que recibe las notas de un alumno, todos los números deben ser naturales
+// <11. Debe calcular el promedio. Por último imprimir en pantalla si el valor de media es < 5
+// “Reprobado”,  entre 6 y 8 “Aprobado” y si es mayor a 8 “Sobresaliente”
+
+let notas=[]
+let prome 
+let sum=0
+let cant=Number(prompt('Ingrese la cantidad de notas que desea ingresar'))
+
+for(i=0;i<cant;i++){
+    notas[i]=Number(prompt(`Ingrese la nota ${i+1}`))
+    while(notas[i]>10||notas[i]<0){
+        notas[i]=Number(prompt(`Vuelva a ingresar la nota ${i+1}`))
+        console.log('entra while');
+    }
+    sum=sum+notas[i]
+    console.log(sum);
+}
+
+prome=(sum/cant)
+
+prome=prome.toFixed(1)
+prome=Number(prome)
+console.log(prome);
+
+
+if(prome<6){
+    document.write(`El promedio es ${prome} por lo tanto esta reprobado`)
+}
+if(prome>=6&&prome<=8){
+    document.write(`El promedio es ${prome} por lo tanto esta aprobado`)
+
+}
+if(prome>8){
+    document.write(`El promedio es ${prome} por lo tanto es sobresaliente`)
+
+}
+
+    </script>
+</body>
+</html>

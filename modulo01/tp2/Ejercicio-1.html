@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var valores = ["verdadero", false, 2, "hola",
+        "mundo", 3, "char"];
+        var may=0
+        var posi
+        var palabra=[] , num=[]
+        var caja
+        var band
+
+        for(i=0;i<valores.length;i++){
+            if(valores[i].length>may){
+                may=valores[i]
+                posi=i
+                console.log('entra');
+            }
+        }
+        document.write(`La palabra con mas letras es: ${valores[posi]} <br>`)
+        console.log(typeof (valores[0]));
+        for(i=0;i<valores.length;i++){
+            if(typeof(valores[i])=='string'){
+                palabra.push(valores[i])
+                
+            }
+        }
+       
+        band=0
+        while(band<(palabra.length-1)){
+            band=0
+        for(i=0;i<(palabra.length-1);i++){
+            if((palabra[i].length)>(palabra[i+1].length)){
+                caja=palabra[i]
+                palabra[i]=palabra[i+1]
+                palabra[i+1]=caja
+                
+            }
+            else {band=band+1}
+        }
+    }
+    document.write(`El orden es: ${palabra}`)
+
+    for(i=0;i<valores.length;i++){
+        if(typeof(valores[i])=='number'){
+            num.push(valores[i])
+        }
+    }
+    document.write(`<br>`)
+    document.write(`Suma=${num[0]+num[1]}<br>`)
+    document.write(`Resta=${num[0]-num[1]}<br>`)
+    document.write(`Multiplicacion=${num[0]*num[1]}<br>`)
+    document.write(`Division=${num[0]/num[1]}`)
+
+
+    </script>
+</body>
+</html>
