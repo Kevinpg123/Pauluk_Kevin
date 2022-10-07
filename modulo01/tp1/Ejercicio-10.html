@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var meses=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+        var num
+        num=prompt('Ingrese el numero del mes requerido')
+        while(num<0 || num>13)
+            {
+                num=prompt('Vuelva a ingresar el valor del mes')
+            }   
+        num=num-1
+        document.write('El mes es: '+meses[num])
+
+
+    </script>
+</body>
+</html>
