@@ -1,9 +1,9 @@
-##Ejercicio 1:
+## Ejercicio 1:
 Agregar una foto en el perfil de la cuenta de GitHub.
 Añadir (si no lo habéis hecho ya) la clave pública que se corresponde a tu
 ordenador. Ver:
 https://docs.github.com/es/authentication/connecting-to-github-with-ssh/addinga-new-ssh-key-to-your-github-account
-##Ejercicio 2:
+## Ejercicio 2:
 a- Crear un repositorio privado en github.com llamado “repo01”.
 b- Desde la interfaz web crear un archivo README.md que contenga el autor y
 una descripción de la tarea. Realizar un commit en la rama “main”.
@@ -12,7 +12,7 @@ Luego realizar un commit en la rama “main” con una descripción del punto.
 d- Editar el archivo script.js y agregar:
 // Este es un archivo de pruebas.
 Luego realizar un commit en la rama “main” con una descripción del punto.
-##Ejercicio 3:
+## Ejercicio 3:
 a- Crear un repositorio publico en github.com que tenga de nombre el del
 estudiante, “apellido_nombre”.
 b- En el repositorio, crear un archivo README.md, que contenga:
@@ -22,7 +22,7 @@ b- En el repositorio, crear un archivo README.md, que contenga:
 - Autor: nombre y apellido del estudiante
 - Descripción: este repositorio fue creado con fines académicos. Contiene
 los ejercicios resueltos de la cursada 2022.
-##Ejercicio 4:
+## Ejercicio 4:
 a- En el repositorio “apellido_nombre” crear las carpetas:
 modulo01/tp1:
 modulo01/tp2:
@@ -30,7 +30,7 @@ modulo02
 b- Dentro de cada carpeta, crear un archivo README.MD con las consignas,
 respetando el formato Markdown.
 c- En cada directorio agregar las consignas de los trabajos en formato pdf.
-##Ejercicio 5:
+## Ejercicio 5:
 En el repositorio “apellido_nombre” subir los ejercicios resueltos de los trabajos
 realizados a la fecha. Quedando ordenado de la siguiente manera:
 modulo${numModulo}/tp${numTP}/ejercicio-${numEjercicio}
